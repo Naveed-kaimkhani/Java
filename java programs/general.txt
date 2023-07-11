@@ -1,0 +1,97 @@
+import java.lang.annotation.Target;
+import java.util.Scanner;
+
+class Employee
+{
+    int salary;
+    public int get_salary()
+    {
+        return salary;
+
+    }
+
+    String name;
+    public String get_name()
+    {
+        return name;
+    }
+
+}
+
+public class j
+{   
+   public static void main(String [] args) 
+{  
+
+    Scanner sc=new Scanner(System.in);
+     	System.out.println("Starting with oop");
+     	 
+    Employee obj1=new Employee();
+    obj1.salary=1000;
+    obj1.name="naveed";
+    System.out.println (obj1.get_salary());
+    System.out.println(obj1.get_name());
+
+   }
+}
+import java.lang.annotation.Target;
+import java.util.Scanner;
+
+class Square
+{
+    int l;
+    int w;
+    int h;
+
+    public void set_sides(int x, int y , int z)
+    {
+        l=x;
+        w=y;
+        h=z;
+
+    }
+
+    public int area()
+    {   System.out.print("Area is ");
+        return l*w*h;
+    }
+
+}
+
+
+public class Q1
+{   
+   public static void main(String [] args) 
+{  
+
+    Scanner sc=new Scanner(System.in);
+     	System.out.println("Starting with oop");
+     	 
+    Square obj1=new Square();
+    Square obj2=new Square();
+    
+    obj1.set_sides(2, 2,2);
+    System.out.println(obj1.area());
+   
+    obj2.set_sides(3, 3,3);
+    System.out.println(obj2.area());
+   
+   }
+}
+
+class Cylinder
+{
+    int r;
+    int h;
+
+    public void setter(int re, int hi)
+    {
+        r=re;
+        h=hi;
+    }
+    public void getter()
+    {
+        System.out.println("Radius is " +r);
+        System.out.println("height is "+h);
+    }
+}
